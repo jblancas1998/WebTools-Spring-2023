@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <nav>
+            <a href="webtools/index.html"> Home Page </a> | <a href="gallery.html"> My Portfolio </a> | 
+            <a href="faq.html">FAQ's</a> 
+          </nav>
+        <!-- Reference: Navigation Bar-->
+      <hr>
+        <h3>The following table will display all the dates of the upcoming shows & movies from Seth MacFaralane.</h3>
+      <table border="2" cellpadding="3">
+        <caption>Upcoming Events</caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th scope="col" abbr="Column 1" id="col1">Event</th>
+            <th scope="col" abbr="Column 2" id="col2">Date of Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Show</th>
+            <td headers="col1">The Orville - Season 4</td>
+            <td headers="col2">Spring 2024</td>
+          </tr>
+          <tr>
+            <th scope="row">Show</th>
+            <td headers="col1">Family Guy - Season 22</td>
+            <td headers="col2">Fall 2024</td>
+          </tr>
+          <tr>
+            <th scope="row">Show</th>
+            <td headers="col1">Family Guy - Season 23</td>
+            <td headers="col2">Fall 2025</td>
+          </tr>
+          <tr>
+            <th scope="row">Movie</th>
+            <td headers="col1">Ted 3</td>
+            <td headers="col2">TBA</td>
+          </tr>
+        </tbody>
+      </table>
+      <!--Table-->
+      <hr>
+
+    <h3>If you would like to submit or inquire about any upcoming shows & Tv, please fill out this form. We will get back to you within 2-5 business days.</h3>
+      <form id="myMailerForm" method="post" action="mailto:e3052707@student.dcccd.edu">
+        <p>
+            <label title="Enter your full name.">Name <input type="text" name="Name" placeholder="Name"></label>
+          </p>
+          <p>
+            <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
+          </p>
+          <p>
+            <label title="Select your reason for contacting us.">Reason for contacting us</label>
+            <select name="reasonID">
+              <option value="">&larr;&nbsp;Select Reason&nbsp;&rarr;</option>
+              <option value="1">Review</option>
+              <option value="2">Inquiry</option>
+              <option value="3">Input Request</option>
+              <option value="4">Other</option>
+            </select>
+          </p>
+          <p>
+            <label title="Select to be contacted."><input type="checkbox" name="contact-me"> Contact Me</label>
+          </p>
+          <h3>Message</h3>
+          <p>
+            <label title="Select if you have a question.">Question <input type="radio" name="request"></label>
+            <br>
+            <label title="Select if you have a comment.">Comment <input type="radio" name="request"></label>
+          </p>
+          <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea>
+          </p>
+          <input type="submit" name="submit" value="Send Mail"><input type="reset" value="Reset Form">
+
+    </form>
+    <!--Form Section-->
+    </body>
+
+</html>
